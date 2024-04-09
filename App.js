@@ -12,6 +12,7 @@ import {
 } from "react-native";
 
 import { useState } from "react";
+import Greet from "./components/Greet";
 
 const localImage = require("./assets/adaptive-icon.png");
 
@@ -74,7 +75,7 @@ export default function App() {
       <ActivityIndicator size={"large"} color={"red"} />
     <ActivityIndicator size={"large"} color={"red"} animating={isVisible} /> */}
 
-      <Button
+      {/* <Button
         title="Alert"
         onPress={() => Alert.alert("Invalid Data")}
         color={"red"}
@@ -99,7 +100,10 @@ export default function App() {
           ])
         }
         color={"red"}
-      />
+      /> */}
+
+      <Greet name={"Dhiraj Dk"}></Greet>
+      <Greet name={"Ketan"}></Greet>
     </View>
   );
 }
